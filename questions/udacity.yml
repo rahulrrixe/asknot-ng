@@ -30,7 +30,7 @@ navlinks:
 
 tree:
   segue1: Want to learn from Udacity?...
-  segue2: what's your area of interest?
+  segue2: What's your area of interest?
   children:
   - title: Mobile!
     subtitle: pixel ninjas
