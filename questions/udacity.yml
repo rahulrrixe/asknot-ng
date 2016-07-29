@@ -29,7 +29,7 @@ navlinks:
       link: https://www.udacity.com/nanodegree
 
 tree:
-  segue1: Want to learn from Udacity?...
+  segue1: Want to learn from Udacity?
   segue2: What's your area of interest?
   children:
   - title: Mobile!

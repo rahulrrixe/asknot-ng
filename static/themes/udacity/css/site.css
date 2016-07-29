@@ -16,20 +16,35 @@ a:hover {
 
 
 /* Custom button */
-.btn-success { border-color: #E85757; background-color: #FDA2A2; color:#FFF;}
+.btn-lg {
+  font-family: "Open Sans", sans-serif;
+}
 
-.btn-success:hover { border-color: #FC0D0D; background-color: #D20606; }
+.btn-success { border-color: #4CAF50; background-color: #4CAF50; color:#FFF;}
+
+.btn-success:hover { border-color: #43A047; background-color: #43A047; }
+
+.btn-danger { border-color: #FF7070; background-color: #FF7070; color:#FFF;}
+
+.btn-danger:hover { border-color: #FBABAB; background-color: #FBABAB; }
+
+.btn-warning { border-color: #1976D2; background-color: #1976D2; color:#FFF;}
+
+.btn-warning:hover { border-color: #2196F3; background-color: #2196F3; }
+
+
 
 html,
 body {
   height: 100%;
   background-size: 100% auto;
+  background: url('../img/bg.png');
 }
 
 .site-wrapper {
   width: 100%;
   height: 100%; /* For at least Firefox */
-  background: url('../img/bg.png');
+  /*background: url('../img/bg.png');*/
   /*background-color: #FFFFFF;*/
   min-height: 100%;
 }
@@ -50,7 +65,7 @@ body {
 
 .cover-container {
   position: relative;
-  top: 40%;
+  top: 35%;
   -webkit-transform: translateY(-45%);
   -ms-transform: translateY(-45%);
   transform: translateY(-45%);
@@ -72,6 +87,15 @@ body {
 .masthead-brand {
   margin-top: 0px;
   margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 64px;
+  height: 64px;
+  /*background-size: 141px 45px;*/
+  background: url('../img/logo.png');
+  background-repeat: no-repeat;
+  text-indent: -9999px;
 }
 
 .masthead-nav > li {
@@ -105,6 +129,7 @@ body {
 .masthead, .mastfoot {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .mastfoot {
@@ -122,6 +147,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
   .masthead-nav {
     float: right;
   }
@@ -146,10 +174,8 @@ body {
 }
 
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-  display: none;
+.glyph {
+  color: #d32f2f;
 }
 
 .title {
@@ -173,15 +199,24 @@ body {
     margin-top: -10px;
 }
 
+.lead {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4;
+}
 
-@media (min-width: 480px) {
-    .title { font-size: 46pt; }
-    .segue1 { font-size: 14pt; }
-    .segue2 { font-size: 24pt; }
-    .subtitle { font-size: 18pt; }
+/*@media (max-width: 498px) {
+  .title { font-size: 32pt; }
+}*/
+@media (min-width: 400px) {
+    .title { font-size: 42pt; }
+    .segue1 { font-size: 12pt; }
+    .segue2 { font-size: 20pt; }
+    .subtitle { font-size: 14pt; }
     .mastfoot { display: block; }
     .bandana {
-    min-height: 200px;
+    /*min-height: 200px;*/
     background-image: -moz-radial-gradient(center top , ellipse farthest-side, rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0) 95%), -moz-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0)), -moz-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.3), rgba(220, 220, 220, 0));
     background-image: -webkit-radial-gradient(center top , ellipse farthest-side, rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0) 95%), -webkit-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0)), -webkit-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.3), rgba(220, 220, 220, 0));
     background-image: -o-radial-gradient(center top , ellipse farthest-side, rgba(140, 140, 140, 0.5), rgba(140, 140, 140, 0) 95%), -o-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.5), rgba(220, 220, 220, 0)), -o-radial-gradient(center top , ellipse farthest-side, rgba(220, 220, 220, 0.3), rgba(220, 220, 220, 0));
@@ -193,9 +228,9 @@ body {
 }
 
 @media (min-width: 768px) {
-  .title { font-size: 64pt; }
+  .title { font-size: 50pt; }
   .segue1 { font-size: 18pt; }
-  .segue2 { font-size: 32pt; }
+  .segue2 { font-size: 30pt; }
   .subtitle { font-size: 24pt; }
   .bandana .img { display: inline-block; }
   /* Handle the widths */

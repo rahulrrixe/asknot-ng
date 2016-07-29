@@ -36,7 +36,7 @@
 
         <div class="masthead clearfix">
           <div class="inner">
-            <!-- <h3 class="masthead-brand">${title}</h3> -->
+            <h3 class="masthead-brand">${title}</h3>
             <nav>
               <ul class="nav masthead-nav">
                 % for info in navlinks:
@@ -97,22 +97,22 @@
               </div>
               % if 'children' in node:
                 <p class="lead">
-                  <a data-next="${node['children'][0]['id']}" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-ok-sign"></span> ${node['affirmative']}</a>
+                  <a data-next="${node['children'][0]['id']}" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> ${node['affirmative']}</a>
                 </p>
 
               % else:
-                  <a href="${node['href']}" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok-sign"></span> ${node['affirmative']}</a>
+                  <a href="${node['href']}" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> ${node['affirmative']}</a>
                 </p>
               % endif:
 
               % if next != node['id']:
                 <p class="lead">
-                  <a data-next="${next}" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove-sign"></span> ${node['negative']}</a>
+                  <a data-next="${next}" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> ${node['negative']}</a>
                 </p>
               % endif
             % if not toplevel:
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-circle-arrow-left"></span> ${node['backlink']}</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> ${node['backlink']}</a>
               </p>
             % endif
             </div>
@@ -133,8 +133,10 @@
 
       </div>
 
-      <div class="footer">
-        <p class="love">Made with <i class="glyphicon glyphicon-heart"></i> in India </p>
+      <div class="mastfoot">
+        <div class="inner">
+          <p class="love">Made with <i class="glyphicon glyphicon-heart glyph"></i> in India </p>
+        </div>
       </div>
     </div>
 
