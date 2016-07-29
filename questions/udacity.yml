@@ -1,5 +1,5 @@
 title: What can I learn from Udacity?
-description: What can I do learn from Udacity?
+description: What can I learn from Udacity?
 favicon: /static/themes/udacity/img/favicon.ico
 negatives:
     - "No"
@@ -25,39 +25,39 @@ backlinks:
 navlinks:
     - name: Home
       link: "javascript:reloadHome();"
-    - name: Nanodgress
+    - name: Nanodegrees
       link: https://www.udacity.com/nanodegree
 
 tree:
-  segue1: Want to learn from Udacity?...
+  segue1: Want to learn from Udacity ?
   segue2: What's your area of interest?
   children:
-  - title: Mobile!
-    subtitle: pixel ninjas
-    segue1: So you enjoy working on the way users interact with websites and programs?
-    segue2: How about the...
-    children: includes/fedora/design.yml
+  - title: Mobile
+    subtitle: Apps Galore !
+    segue1: Want to make cool apps that run on mobile phones? 
+    segue2: Which platform do you prefer?
+    children: includes/udacity/design.yml
 
   - title: Basic Programming
-    subtitle: hacking the gibson
-    segue1: "Zeroes and ones #allday?  Me too."
-    segue2: What's your favorite language?
-    children: includes/fedora/coding.yml
+    subtitle: Get your hands dirty !
+    segue1: "Java is to JavaScript as car is to carpet !"
+    segue2: Choose your favorite language
+    children: includes/udacity/coding.yml
 
   - title: Machine Learning
-    subtitle: connecting the dots
-    segue1: Have a knack for community-building?
+    subtitle: Data Wizardary
+    segue1: Want to make a machine learn like a human?
     segue2: Would you like something more
-    children: includes/fedora/community.yml
+    children: includes/udacity/server.yml
 
   - title: Web Development
-    subtitle: wordsmithery
-    segue1: So, you have a way with words?
+    subtitle: Kickstart your own websites !
+    segue1: So you like making websites look 
     segue2: Would you be more interested in...
-    children: includes/fedora/writing.yml
+    children: includes/udacity/server.yml
 
-  - title: Data Anaylist
-    subtitle: labelling things, perhaps obsessively
-    segue1: So you like putting things in their place?
+  - title: Data Scientist
+    subtitle: Finding patterns, perhaps obsessively
+    segue1: So you like find patterns in data?
     segue2: How about...
     children: includes/fedora/categorization.yml
