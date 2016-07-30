@@ -4,9 +4,8 @@ tree:
         subtitle: Make apps for Android Phones
         segue1: Excellent
         segue2: Where do you want to begin?
-
         children:
-        - title: Android Basics 
+        - title: Android Basics
           subtitle: Learn Java and start building apps for Android
           href: https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803
 
@@ -18,9 +17,8 @@ tree:
         subtitle: Make apps for iPad and iPhone
         segue1: Excellent
         Segue2: Where do you want to begin?
-
         children:
-        - title: iOS Basics 
+        - title: iOS Basics
           subtitle: Develop core skills to start developing apps for iPad and iPhone
           href: https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006
 

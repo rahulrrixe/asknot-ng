@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="What can I learn from Udacity?">
-    <meta name="author" content="Rahul Ranjan">
+    <meta name="author" content="Ralph Bean">
     <link rel="shortcut icon" href="static/themes/udacity/img/favicon.png">
 
     <title>What can I learn from Udacity?</title>
@@ -18,247 +18,257 @@
     <script>
         var SEP = '#';
         var all_ids = [
-    "foo",
-    "mobile",
-    "android",
-    "android-basics",
-    "android-developer",
-    "ios",
-    "ios-basics",
-    "ios-developer",
-    "basic-programming",
-    "python",
-    "java",
-    "javascript",
-    "swift",
-    "artificial-intelligence",
-    "machine-learning",
-    "self-driving-car",
-    "web",
-    "front-end-development",
-    "senior-web-developer",
-    "full-stack-developer",
-    "data",
-    "data-analyst",
+    "foo", 
+    "mobile", 
+    "android", 
+    "android-basics", 
+    "android-developer", 
+    "ios", 
+    "ios-basics", 
+    "ios-developer", 
+    "basic-programming", 
+    "python", 
+    "java", 
+    "javascript", 
+    "swift", 
+    "artificial-intelligence", 
+    "machine-learning", 
+    "self-driving-car", 
+    "web", 
+    "front-end-development", 
+    "senior-web-developer", 
+    "full-stack-developer", 
+    "data", 
+    "data-analyst", 
     "machine-learningb"
 ];
         var question_tree = {
-    "backlink": "Get me outta here!",
+    "backlink": "I think I made a mistake", 
     "children": [
         {
-            "backlink": "I think I made a mistake",
-            "subtitle": "Learn how to build apps that run on smart phones",
-            "title": "Mobile",
+            "backlink": "I was wrong, take me back", 
+            "subtitle": "Learn how to build apps that run on smart phones", 
+            "title": "Mobile", 
+            "negative": "Doesn't sound like me", 
             "children": [
                 {
-                    "backlink": "Get me outta here!",
-                    "subtitle": "Make apps for Android Phones",
-                    "title": "Android",
-                    "negative": "Next, please",
+                    "backlink": "I was wrong, take me back", 
+                    "subtitle": "Make apps for Android Phones", 
+                    "title": "Android", 
+                    "negative": "Nope, nope, nope", 
                     "children": [
                         {
-                            "backlink": "I think I made a mistake",
-                            "subtitle": "Learn Java and start building apps for Android",
-                            "title": "Android Basics",
-                            "negative": "Nope",
-                            "affirmative": "Totally",
-                            "href": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803",
+                            "backlink": "Get me outta here!", 
+                            "subtitle": "Learn Java and start building apps for Android", 
+                            "title": "Android Basics", 
+                            "negative": "Next, please", 
+                            "affirmative": "That's me!", 
+                            "href": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803", 
                             "id": "android-basics"
-                        },
+                        }, 
                         {
-                            "backlink": "I think I made a mistake",
-                            "subtitle": "Head towards Android Mastery learning tools, principles and patterns underlying Android Development",
-                            "title": "Android Developer",
-                            "negative": "No",
-                            "affirmative": "Sounds awesome",
-                            "href": "https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801",
+                            "backlink": "I think I made a mistake", 
+                            "subtitle": "Head towards Android Mastery learning tools, principles and patterns underlying Android Development", 
+                            "title": "Android Developer", 
+                            "negative": "Nope, nope, nope", 
+                            "affirmative": "Yes", 
+                            "href": "https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801", 
                             "id": "android-developer"
                         }
-                    ],
-                    "segue1": "Excellent",
-                    "segue2": "Where do you want to begin?",
-                    "affirmative": "That's me!",
+                    ], 
+                    "segue1": "Excellent", 
+                    "segue2": "Where do you want to begin?", 
+                    "affirmative": "That's me!", 
                     "id": "android"
-                },
+                }, 
                 {
-                    "backlink": "Get me outta here!",
-                    "subtitle": "Make apps for iPad and iPhone",
-                    "title": "iOS",
-                    "negative": "Next, please",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Make apps for iPad and iPhone", 
+                    "title": "iOS", 
+                    "negative": "Absolutely not", 
                     "children": [
                         {
-                            "backlink": "I think I made a mistake",
-                            "subtitle": "Develop core skills to start developing apps for iPad and iPhone",
-                            "title": "iOS Basics",
-                            "negative": "Nope, nope, nope",
-                            "affirmative": "Yes",
-                            "href": "https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006",
+                            "backlink": "Get me outta here!", 
+                            "subtitle": "Develop core skills to start developing apps for iPad and iPhone", 
+                            "title": "iOS Basics", 
+                            "negative": "Nope, nope, nope", 
+                            "affirmative": "Totally", 
+                            "href": "https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006", 
                             "id": "ios-basics"
-                        },
+                        }, 
                         {
-                            "backlink": "Get me outta here!",
-                            "subtitle": "Master Swift and become an expert iOS Developer",
-                            "title": "iOS Developer",
-                            "negative": "No, thanks",
-                            "affirmative": "Sounds awesome",
-                            "href": "https://www.udacity.com/course/ios-developer-nanodegree--nd003",
+                            "backlink": "Get me outta here!", 
+                            "subtitle": "Master Swift and become an expert iOS Developer", 
+                            "title": "iOS Developer", 
+                            "negative": "Nope", 
+                            "affirmative": "Yes", 
+                            "href": "https://www.udacity.com/course/ios-developer-nanodegree--nd003", 
                             "id": "ios-developer"
                         }
-                    ],
-                    "segue1": "Excellent",
-                    "Segue2": "Where do you want to begin?",
-                    "affirmative": "Tell me more",
+                    ], 
+                    "segue1": "Excellent", 
+                    "Segue2": "Where do you want to begin?", 
+                    "affirmative": "Yes", 
                     "id": "ios"
                 }
-            ],
-            "negative": "Nope, nope, nope",
-            "affirmative": "Sounds awesome",
+            ], 
+            "segue1": "Want to make cool apps that run on mobile phones?", 
+            "segue2": "Which platform do you prefer?", 
+            "affirmative": "Yes", 
             "id": "mobile"
-        },
+        }, 
         {
-            "backlink": "I was wrong, take me back",
-            "subtitle": "Learn the basics of how to code",
-            "title": "Basic Programming",
+            "backlink": "I was wrong, take me back", 
+            "subtitle": "Learn the basics of how to code", 
+            "title": "Basic Programming", 
+            "negative": "No", 
             "children": [
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Learn object oriented programming in Python",
-                    "title": "Python",
-                    "negative": "Nope",
-                    "affirmative": "That's me!",
-                    "href": "https://www.udacity.com/course/programming-foundations-with-python--ud036",
+                    "backlink": "I was wrong, take me back", 
+                    "subtitle": "Learn object oriented programming in Python", 
+                    "title": "Python", 
+                    "negative": "Nope", 
+                    "affirmative": "Tell me more", 
+                    "href": "https://www.udacity.com/course/programming-foundations-with-python--ud036", 
                     "id": "python"
-                },
+                }, 
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Learn how to program in Java with classes and objects",
-                    "title": "Java",
-                    "negative": "No",
-                    "affirmative": "Totally",
-                    "href": "https://www.udacity.com/course/intro-to-java-programming--cs046",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Learn how to program in Java with classes and objects", 
+                    "title": "Java", 
+                    "negative": "No", 
+                    "affirmative": "That's me!", 
+                    "href": "https://www.udacity.com/course/intro-to-java-programming--cs046", 
                     "id": "java"
-                },
+                }, 
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Learn the language that power the web",
-                    "title": "JavaScript",
-                    "negative": "No",
-                    "affirmative": "Sounds awesome",
-                    "href": "https://www.udacity.com/course/javascript-basics--ud804",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Learn the language that power the web", 
+                    "title": "JavaScript", 
+                    "negative": "No, thanks", 
+                    "affirmative": "Tell me more", 
+                    "href": "https://www.udacity.com/course/javascript-basics--ud804", 
                     "id": "javascript"
-                },
+                }, 
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Learn how to build your first iPhone app",
-                    "title": "Swift",
-                    "negative": "No, thanks",
-                    "affirmative": "Tell me more",
-                    "href": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Learn how to build your first iPhone app", 
+                    "title": "Swift", 
+                    "negative": "Absolutely not", 
+                    "affirmative": "That's me!", 
+                    "href": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585", 
                     "id": "swift"
                 }
-            ],
-            "negative": "Nope",
-            "affirmative": "Tell me more",
+            ], 
+            "segue1": "What is the most popular language in programming ??", 
+            "segue2": "Profanity", 
+            "affirmative": "Sounds awesome", 
             "id": "basic-programming"
-        },
+        }, 
         {
-            "backlink": "I was wrong, take me back",
-            "subtitle": "Learn how to make interesting predictions from data",
-            "title": "Artificial Intelligence",
+            "backlink": "I think I made a mistake", 
+            "subtitle": "Learn how to make interesting predictions from data", 
+            "title": "Artificial Intelligence", 
+            "negative": "Nope", 
             "children": [
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics",
-                    "title": "Machine Learning",
-                    "negative": "Doesn't sound like me",
-                    "affirmative": "Yes",
-                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009",
+                    "backlink": "I think I made a mistake", 
+                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics", 
+                    "title": "Machine Learning", 
+                    "negative": "Absolutely not", 
+                    "affirmative": "Sure", 
+                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
                     "id": "machine-learning"
-                },
+                }, 
                 {
-                    "backlink": "I think I made a mistake",
-                    "subtitle": "Build the future, today",
-                    "title": "Self Driving Car",
-                    "negative": "No, thanks",
-                    "affirmative": "Yes",
-                    "href": "https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Build the future, today", 
+                    "title": "Self Driving Car", 
+                    "negative": "Absolutely not", 
+                    "affirmative": "Sounds awesome", 
+                    "href": "https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013", 
                     "id": "self-driving-car"
                 }
-            ],
-            "negative": "Absolutely not",
-            "affirmative": "Sure",
+            ], 
+            "segue1": "Are you prepared when machines rage war against humanity?", 
+            "segue2": "Backspace on semi-colon FTW!", 
+            "affirmative": "Tell me more", 
             "id": "artificial-intelligence"
-        },
+        }, 
         {
-            "backlink": "I think I made a mistake",
-            "subtitle": "Learn how to make apps that run on the internet",
-            "title": "Web",
+            "backlink": "Get me outta here!", 
+            "subtitle": "Learn how to make apps that run on the internet", 
+            "title": "Web", 
+            "negative": "Nope", 
             "children": [
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Design stunning User Experiences",
-                    "title": "Front End Development",
-                    "negative": "No",
-                    "affirmative": "Totally",
-                    "href": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
+                    "backlink": "I was wrong, take me back", 
+                    "subtitle": "Design stunning User Experiences", 
+                    "title": "Front End Development", 
+                    "negative": "Next, please", 
+                    "affirmative": "Sounds awesome", 
+                    "href": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001", 
                     "id": "front-end-development"
-                },
+                }, 
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Master tools, techiniques and frameworks to build complex web apps",
-                    "title": "Senior Web Developer",
-                    "negative": "Absolutely not",
-                    "affirmative": "Sure",
-                    "href": "https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802",
+                    "backlink": "Get me outta here!", 
+                    "subtitle": "Master tools, techiniques and frameworks to build complex web apps", 
+                    "title": "Senior Web Developer", 
+                    "negative": "Not on your life", 
+                    "affirmative": "Sounds awesome", 
+                    "href": "https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802", 
                     "id": "senior-web-developer"
-                },
+                }, 
                 {
-                    "backlink": "Get me outta here!",
-                    "subtitle": "Learn how to make server side, data driven applications that run on the web",
-                    "title": "Full Stack Developer",
-                    "negative": "Absolutely not",
-                    "affirmative": "That's me!",
-                    "href": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004",
+                    "backlink": "I think I made a mistake", 
+                    "subtitle": "Learn how to make server side, data driven applications that run on the web", 
+                    "title": "Full Stack Developer", 
+                    "negative": "Not on your life", 
+                    "affirmative": "Sounds awesome", 
+                    "href": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004", 
                     "id": "full-stack-developer"
                 }
-            ],
-            "negative": "No, thanks",
-            "affirmative": "Tell me more",
+            ], 
+            "segue1": "Is it too late to say I'm sorry?", 
+            "segue2": "Cause I'm missing more than just your &ltbody&gt", 
+            "affirmative": "Yes", 
             "id": "web"
-        },
+        }, 
         {
-            "backlink": "I was wrong, take me back",
-            "subtitle": "Find interesting patterns in data",
-            "title": "Data",
+            "backlink": "I think I made a mistake", 
+            "subtitle": "Find interesting patterns in data", 
+            "title": "Data", 
+            "negative": "Absolutely not", 
             "children": [
                 {
-                    "backlink": "I was wrong, take me back",
-                    "subtitle": "Learn how to clean data, dervice patterns and insights, make predications and present your findings",
-                    "title": "Data Analyst",
-                    "negative": "Absolutely not",
-                    "affirmative": "Tell me more",
-                    "href": "https://www.udacity.com/course/data-analyst-nanodegree--nd002",
+                    "backlink": "I was wrong, take me back", 
+                    "subtitle": "Learn how to clean data, dervice patterns and insights, make predications and present your findings", 
+                    "title": "Data Analyst", 
+                    "negative": "Absolutely not", 
+                    "affirmative": "That's me!", 
+                    "href": "https://www.udacity.com/course/data-analyst-nanodegree--nd002", 
                     "id": "data-analyst"
-                },
+                }, 
                 {
-                    "backlink": "Get me outta here!",
-                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics",
-                    "title": "Machine Learning",
-                    "negative": "Nope, nope, nope",
-                    "affirmative": "Totally",
-                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009",
+                    "backlink": "I was wrong, take me back", 
+                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics", 
+                    "title": "Machine Learning", 
+                    "negative": "No, thanks", 
+                    "affirmative": "Sounds awesome", 
+                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
                     "id": "machine-learningb"
                 }
-            ],
-            "negative": "Absolutely not",
-            "affirmative": "Yes",
+            ], 
+            "segue1": "Torture the data...", 
+            "segue2": "it will confess to anything !", 
+            "affirmative": "Totally", 
             "id": "data"
         }
-    ],
-    "negative": "Next, please",
-    "affirmative": "Totally",
-    "segue1": "Want to learn from Udacity?",
-    "segue2": "What's your area of interest?",
+    ], 
+    "negative": "Nope", 
+    "affirmative": "Sounds awesome", 
+    "segue1": "Want to learn from Udacity?", 
+    "segue2": "What's your area of interest?", 
     "id": "foo"
 };
     </script>
@@ -310,9 +320,9 @@
             </div>
           </div>
 
+          
 
-
-
+          
 
             <div id="mobile" class="cover hidden">
 
@@ -330,20 +340,22 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="android" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
+                  <a data-next="android" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
                 </p>
 
 
                 <p class="lead">
-                  <a data-next="basic-programming" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope, nope, nope</a>
+                  <a data-next="basic-programming" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Doesn't sound like me</a>
                 </p>
             </div>
 
-
+                
 
             <div id="android" class="cover hidden">
 
+              <p class="segue1">Want to make cool apps that run on mobile phones?</p>
 
+              <p class="segue2">Which platform do you prefer?</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -360,14 +372,14 @@
 
 
                 <p class="lead">
-                  <a data-next="ios" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Next, please</a>
+                  <a data-next="ios" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope, nope, nope</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
               </p>
             </div>
 
-
+                
 
             <div id="android-basics" class="cover hidden">
 
@@ -384,20 +396,20 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
+                  <a href="https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="android-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</a>
+                  <a data-next="android-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Next, please</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="android-developer" class="cover hidden">
 
@@ -414,11 +426,11 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
+                  <a href="https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="android-basics" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No</a>
+                  <a data-next="android-basics" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope, nope, nope</a>
                 </p>
               <p class="lead">
                 <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
@@ -426,14 +438,16 @@
             </div>
 
 
+          
 
-
-
-
+          
+                
 
             <div id="ios" class="cover hidden">
 
+              <p class="segue1">Want to make cool apps that run on mobile phones?</p>
 
+              <p class="segue2">Which platform do you prefer?</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -445,19 +459,19 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="ios-basics" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
+                  <a data-next="ios-basics" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
                 </p>
 
 
                 <p class="lead">
-                  <a data-next="android" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Next, please</a>
+                  <a data-next="android" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
                 </p>
               <p class="lead">
                 <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
-
+                
 
             <div id="ios-basics" class="cover hidden">
 
@@ -473,20 +487,20 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
+                  <a href="https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
                 </p>
 
                 <p class="lead">
                   <a data-next="ios-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope, nope, nope</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="ios-developer" class="cover hidden">
 
@@ -502,11 +516,11 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/ios-developer-nanodegree--nd003" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
+                  <a href="https://www.udacity.com/course/ios-developer-nanodegree--nd003" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="ios-basics" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
+                  <a data-next="ios-basics" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</a>
                 </p>
               <p class="lead">
                 <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
@@ -514,12 +528,12 @@
             </div>
 
 
+          
 
+          
 
-
-
-
-
+          
+          
 
             <div id="basic-programming" class="cover hidden">
 
@@ -537,20 +551,22 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="python" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
+                  <a data-next="python" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
 
                 <p class="lead">
-                  <a data-next="artificial-intelligence" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</a>
+                  <a data-next="artificial-intelligence" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No</a>
                 </p>
             </div>
 
-
+                
 
             <div id="python" class="cover hidden">
 
+              <p class="segue1">What is the most popular language in programming ??</p>
 
+              <p class="segue2">Profanity</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -561,7 +577,7 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/programming-foundations-with-python--ud036" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
+                  <a href="https://www.udacity.com/course/programming-foundations-with-python--ud036" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
                 </p>
 
                 <p class="lead">
@@ -573,12 +589,14 @@
             </div>
 
 
-
-
+          
+                
 
             <div id="java" class="cover hidden">
 
+              <p class="segue1">What is the most popular language in programming ??</p>
 
+              <p class="segue2">Profanity</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -589,24 +607,26 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/intro-to-java-programming--cs046" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
+                  <a href="https://www.udacity.com/course/intro-to-java-programming--cs046" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
                 </p>
 
                 <p class="lead">
                   <a data-next="javascript" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="javascript" class="cover hidden">
 
+              <p class="segue1">What is the most popular language in programming ??</p>
 
+              <p class="segue2">Profanity</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -617,24 +637,26 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/javascript-basics--ud804" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
+                  <a href="https://www.udacity.com/course/javascript-basics--ud804" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="swift" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No</a>
+                  <a data-next="swift" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="swift" class="cover hidden">
 
+              <p class="segue1">What is the most popular language in programming ??</p>
 
+              <p class="segue2">Profanity</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -645,22 +667,22 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
+                  <a href="https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="python" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
+                  <a data-next="python" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
+          
 
-
-
-
+          
+          
 
             <div id="artificial-intelligence" class="cover hidden">
 
@@ -678,20 +700,22 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="machine-learning" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sure</a>
+                  <a data-next="machine-learning" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
                 </p>
 
 
                 <p class="lead">
-                  <a data-next="web" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
+                  <a data-next="web" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</a>
                 </p>
             </div>
 
-
+                
 
             <div id="machine-learning" class="cover hidden">
 
+              <p class="segue1">Are you prepared when machines rage war against humanity?</p>
 
+              <p class="segue2">Backspace on semi-colon FTW!</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -702,24 +726,26 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
+                  <a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sure</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="self-driving-car" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Doesn't sound like me</a>
+                  <a data-next="self-driving-car" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="self-driving-car" class="cover hidden">
 
+              <p class="segue1">Are you prepared when machines rage war against humanity?</p>
 
+              <p class="segue2">Backspace on semi-colon FTW!</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -730,22 +756,22 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
+                  <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="machine-learning" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
+                  <a data-next="machine-learning" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
+          
 
-
-
-
+          
+          
 
             <div id="web" class="cover hidden">
 
@@ -763,20 +789,22 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="front-end-development" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
+                  <a data-next="front-end-development" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
                 </p>
 
 
                 <p class="lead">
-                  <a data-next="data" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
+                  <a data-next="data" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope</a>
                 </p>
             </div>
 
-
+                
 
             <div id="front-end-development" class="cover hidden">
 
+              <p class="segue1">Is it too late to say I'm sorry?</p>
 
+              <p class="segue2">Cause I'm missing more than just your &ltbody&gt</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -787,11 +815,11 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
+                  <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="senior-web-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No</a>
+                  <a data-next="senior-web-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Next, please</a>
                 </p>
               <p class="lead">
                 <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
@@ -799,12 +827,14 @@
             </div>
 
 
-
-
+          
+                
 
             <div id="senior-web-developer" class="cover hidden">
 
+              <p class="segue1">Is it too late to say I'm sorry?</p>
 
+              <p class="segue2">Cause I'm missing more than just your &ltbody&gt</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -815,24 +845,26 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sure</a>
+                  <a href="https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="full-stack-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
+                  <a data-next="full-stack-developer" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Not on your life</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
               </p>
             </div>
 
 
-
-
+          
+                
 
             <div id="full-stack-developer" class="cover hidden">
 
+              <p class="segue1">Is it too late to say I'm sorry?</p>
 
+              <p class="segue2">Cause I'm missing more than just your &ltbody&gt</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -843,22 +875,22 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
+                  <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="front-end-development" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Absolutely not</a>
+                  <a data-next="front-end-development" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Not on your life</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I think I made a mistake</a>
               </p>
             </div>
 
 
+          
 
-
-
-
+          
+          
 
             <div id="data" class="cover hidden">
 
@@ -876,7 +908,7 @@
                 </span>
               </div>
                 <p class="lead">
-                  <a data-next="data-analyst" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Yes</a>
+                  <a data-next="data-analyst" class="yes btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
                 </p>
 
 
@@ -885,11 +917,13 @@
                 </p>
             </div>
 
-
+                
 
             <div id="data-analyst" class="cover hidden">
 
+              <p class="segue1">Torture the data...</p>
 
+              <p class="segue2">it will confess to anything !</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -900,7 +934,7 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/data-analyst-nanodegree--nd002" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Tell me more</a>
+                  <a href="https://www.udacity.com/course/data-analyst-nanodegree--nd002" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> That's me!</a>
                 </p>
 
                 <p class="lead">
@@ -912,12 +946,14 @@
             </div>
 
 
-
-
+          
+                
 
             <div id="machine-learningb" class="cover hidden">
 
+              <p class="segue1">Torture the data...</p>
 
+              <p class="segue2">it will confess to anything !</p>
 
               <div class="bandana">
                 <span class="main-text">
@@ -928,21 +964,21 @@
                   </p>
                 </span>
               </div>
-                  <a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Totally</a>
+                  <a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-thumbs-up"></span> Sounds awesome</a>
                 </p>
 
                 <p class="lead">
-                  <a data-next="data-analyst" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> Nope, nope, nope</a>
+                  <a data-next="data-analyst" class="nope btn btn-danger btn-lg"><span class="glyphicon glyphicon-thumbs-down"></span> No, thanks</a>
                 </p>
               <p class="lead">
-                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> Get me outta here!</a>
+                <a class="back btn btn-warning btn-lg"><span class="glyphicon glyphicon-arrow-left"></span> I was wrong, take me back</a>
               </p>
             </div>
 
 
+          
 
-
-
+          
 
         </div>
 
@@ -987,7 +1023,6 @@
         } );
     </script>
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-579cde29e3b679ad"></script>
   </body>
 </html>

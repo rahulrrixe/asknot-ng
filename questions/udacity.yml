@@ -34,20 +34,31 @@ tree:
   children:
   - title: Mobile
     subtitle: Learn how to build apps that run on smart phones
+    segue1: Want to make cool apps that run on mobile phones?
+    segue2: Which platform do you prefer?
     children: includes/udacity/mobile.yml
 
   - title: Basic Programming
     subtitle: Learn the basics of how to code
+    segue1: What is the most popular language in programming ??
+    segue2: Profanity
     children: includes/udacity/coding.yml
 
   - title: Artificial Intelligence
     subtitle: Learn how to make interesting predictions from data
+    segue1: Are you prepared when machines rage war against humanity?
+    segue2: Backspace on semi-colon FTW!
+
     children: includes/udacity/ai.yml
 
-  - title: Web 
+  - title: Web
     subtitle: Learn how to make apps that run on the internet
+    segue1: Is it too late to say I'm sorry?
+    segue2: Cause I'm missing more than just your &ltbody&gt
     children: includes/udacity/web.yml
 
   - title: Data
     subtitle: Find interesting patterns in data
+    segue1: Torture the data...
+    segue2: it will confess to anything !
     children: includes/udacity/data.yml
