@@ -36,28 +36,28 @@ tree:
     subtitle: Apps Galore !
     segue1: Want to make cool apps that run on mobile phones? 
     segue2: Which platform do you prefer?
-    children: includes/udacity/design.yml
+    children: includes/udacity/mobile.yml
 
   - title: Basic Programming
-    subtitle: Get your hands dirty !
-    segue1: "Java is to JavaScript as car is to carpet !"
-    segue2: Choose your favorite language
+    subtitle: To iterate is human, to recurse divine
+    segue1: What is the most popular language in programming ??
+    segue2: Profanity
     children: includes/udacity/coding.yml
 
-  - title: Machine Learning
-    subtitle: Data Wizardary
-    segue1: Want to make a machine learn like a human?
-    segue2: Would you like something more
-    children: includes/udacity/server.yml
+  - title: Artificial Intelligence
+    subtitle: Don't you want to predict the meaning of life?
+    segue1: Are you prepared when machines rage war against humanity?
+    segue2: Backspace on semi-colon FTW!
+    children: includes/udacity/ai.yml
 
-  - title: Web Development
-    subtitle: Kickstart your own websites !
-    segue1: So you like making websites look 
-    segue2: Would you be more interested in...
-    children: includes/udacity/server.yml
+  - title: Web 
+    subtitle: Caught up in the World Wide Web?
+    segue1: Is it too late to say I'm sorry?
+    segue2: Cause I'm missing more than just your &ltbody&gt
+    children: includes/udacity/web.yml
 
-  - title: Data Scientist
+  - title: Data Junkie
     subtitle: Finding patterns, perhaps obsessively
-    segue1: So you like find patterns in data?
-    segue2: How about...
-    children: includes/fedora/categorization.yml
+    segue1: Torture the data...
+    segue2: it will confess to anything !
+    children: includes/udacity/data.yml
