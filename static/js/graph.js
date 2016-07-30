@@ -1,6 +1,6 @@
 var DARK_BLUE = "#2980b9";
 var LIGHT_BLUE = "#3498db";
-var BLACK = "34495e";
+var BLACK = "#7f8c8d";
 
 // A mapping of status.fp.o status states to bootstrap css classes.
 var status_classes = {
@@ -21,7 +21,7 @@ function init() {
     var node2html = function(node) {
         var html = node.name;
         if (node.data.icon != undefined) {
-            html = "<img class='icon' src='img/icons/" +
+            html = "<img class='icon' src='static/themes/udacity/img/icons/" +
                 node.data.icon + "'/> " + html;
         }
         return html

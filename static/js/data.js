@@ -24,7 +24,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001", 
-            "description": "Design stunning User Experiences\n"
+            "description": "Design stunning User Experiences\n", 
+            "icon": "domain.png"
           }, 
           "name": "Front End", 
           "ipv6_only": false, 
@@ -33,7 +34,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802", 
-            "description": "Master tools, techiniques and frameworks to build complex web apps\n"
+            "description": "Master tools, techiniques and frameworks to build complex web apps\n", 
+            "icon": "browser.png"
           }, 
           "name": "Senior Web Dev", 
           "ipv6_only": false, 
@@ -42,7 +44,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004", 
-            "description": "Learn how to make server side, data driven applications that run on the web\n"
+            "description": "Learn how to make server side, data driven applications that run on the web\n", 
+            "icon": "servers.png"
           }, 
           "name": "Full Stack Dev", 
           "ipv6_only": false, 
@@ -61,7 +64,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803", 
-            "description": "Learn Java and start building apps for Android\n"
+            "description": "Learn Java and start building apps for Android\n", 
+            "icon": "android.png"
           }, 
           "name": "Android Basics", 
           "ipv6_only": false, 
@@ -79,7 +83,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006", 
-            "description": "Make apps for iPad and iPhone\n"
+            "description": "Make apps for iPad and iPhone\n", 
+            "icon": "apple.png"
           }, 
           "name": "iOS Basics", 
           "ipv6_only": false, 
@@ -107,7 +112,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
-            "description": "Make predictive models for massive data sets in education, finance, healthcare or robotics\n"
+            "description": "Make predictive models for massive data sets in education, finance, healthcare or robotics\n", 
+            "icon": "robot.png"
           }, 
           "name": "Machine Learning", 
           "ipv6_only": false, 
@@ -116,7 +122,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013", 
-            "description": "Build the future, today\n"
+            "description": "Build the future, today\n", 
+            "icon": "mower.png"
           }, 
           "name": "Self Driving Car", 
           "ipv6_only": false, 
@@ -135,7 +142,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/data-analyst-nanodegree--nd002", 
-            "description": "Learn how to clean data, dervice patterns and insights, make predications and present your findings\n"
+            "description": "Learn how to clean data, dervice patterns and insights, make predications and present your findings\n", 
+            "icon": "laptop.png"
           }, 
           "name": "Data Analyst", 
           "ipv6_only": false, 
@@ -144,7 +152,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
-            "description": "Make predictive models for massive data sets in education, finance, healthcare or robotics\n"
+            "description": "Make predictive models for massive data sets in education, finance, healthcare or robotics\n", 
+            "icon": "robot.png"
           }, 
           "name": "Machine Learning", 
           "ipv6_only": false, 
@@ -163,7 +172,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/programming-foundations-with-python--ud036", 
-            "description": "Learn object oriented programming in Python\n"
+            "description": "Learn object oriented programming in Python\n", 
+            "icon": "py.png"
           }, 
           "name": "Python", 
           "ipv6_only": false, 
@@ -172,7 +182,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/intro-to-java-programming--cs046", 
-            "description": "Learn how to program in Java with classes and objects\n"
+            "description": "Learn how to program in Java with classes and objects\n", 
+            "icon": "jar.png"
           }, 
           "name": "Java", 
           "ipv6_only": false, 
@@ -181,7 +192,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/javascript-basics--ud804", 
-            "description": "Learn the language that power the web\n"
+            "description": "Learn the language that power the web\n", 
+            "icon": "javascript.png"
           }, 
           "name": "JavaScript", 
           "ipv6_only": false, 
@@ -190,7 +202,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585", 
-            "description": "Learn how to build your first iPhone app\n"
+            "description": "Learn how to build your first iPhone app\n", 
+            "icon": "swift.png"
           }, 
           "name": "Swift", 
           "ipv6_only": false, 
@@ -209,16 +222,18 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/programming-foundations-with-python--ud036", 
-            "description": "Learn object oriented programming in Python\n"
+            "description": "Learn object oriented programming in Python\n", 
+            "icon": "py.png"
           }, 
-          "name": "Packages", 
+          "name": "Python", 
           "ipv6_only": false, 
           "id": 22
         }, 
         {
           "data": {
             "url": "https://www.udacity.com/course/intro-to-java-programming--cs046", 
-            "description": "Learn how to program in Java with classes and objects\n"
+            "description": "Learn how to program in Java with classes and objects\n", 
+            "icon": "jar.png"
           }, 
           "name": "Java", 
           "ipv6_only": false, 
@@ -227,7 +242,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/javascript-basics--ud804", 
-            "description": "Learn the language that power the web\n"
+            "description": "Learn the language that power the web\n", 
+            "icon": "javascript.png"
           }, 
           "name": "JavaScript", 
           "ipv6_only": false, 
@@ -236,7 +252,8 @@ var json = {
         {
           "data": {
             "url": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585", 
-            "description": "Learn how to build your first iPhone app"
+            "description": "Learn how to build your first iPhone app", 
+            "icon": "swift.png"
           }, 
           "name": "Swift", 
           "ipv6_only": false, 
