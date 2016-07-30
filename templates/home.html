@@ -18,257 +18,257 @@
     <script>
         var SEP = '#';
         var all_ids = [
-    "foo", 
-    "mobile", 
-    "android", 
-    "android-basics", 
-    "android-developer", 
-    "ios", 
-    "ios-basics", 
-    "ios-developer", 
-    "basic-programming", 
-    "python", 
-    "java", 
-    "javascript", 
-    "swift", 
-    "artificial-intelligence", 
-    "machine-learning", 
-    "self-driving-car", 
-    "web", 
-    "front-end-development", 
-    "senior-web-developer", 
-    "full-stack-developer", 
-    "data", 
-    "data-analyst", 
+    "foo",
+    "mobile",
+    "android",
+    "android-basics",
+    "android-developer",
+    "ios",
+    "ios-basics",
+    "ios-developer",
+    "basic-programming",
+    "python",
+    "java",
+    "javascript",
+    "swift",
+    "artificial-intelligence",
+    "machine-learning",
+    "self-driving-car",
+    "web",
+    "front-end-development",
+    "senior-web-developer",
+    "full-stack-developer",
+    "data",
+    "data-analyst",
     "machine-learningb"
 ];
         var question_tree = {
-    "backlink": "Get me outta here!", 
+    "backlink": "Get me outta here!",
     "children": [
         {
-            "backlink": "I was wrong, take me back", 
-            "subtitle": "Learn how to build apps that run on smart phones", 
-            "title": "Mobile", 
-            "negative": "No", 
+            "backlink": "I was wrong, take me back",
+            "subtitle": "Learn how to build apps that run on smart phones",
+            "title": "Mobile",
+            "negative": "No",
             "children": [
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Make apps for Android Phones", 
-                    "title": "Android", 
-                    "negative": "Doesn't sound like me", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Make apps for Android Phones",
+                    "title": "Android",
+                    "negative": "Doesn't sound like me",
                     "children": [
                         {
-                            "backlink": "I think I made a mistake", 
-                            "subtitle": "Learn Java and start building apps for Android", 
-                            "title": "Android Basics", 
-                            "negative": "Next, please", 
-                            "affirmative": "Tell me more", 
-                            "href": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803", 
+                            "backlink": "I think I made a mistake",
+                            "subtitle": "Learn Java and start building apps for Android",
+                            "title": "Android Basics",
+                            "negative": "Next, please",
+                            "affirmative": "Tell me more",
+                            "href": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803",
                             "id": "android-basics"
-                        }, 
+                        },
                         {
-                            "backlink": "I think I made a mistake", 
-                            "subtitle": "Head towards Android Mastery learning tools, principles and patterns underlying Android Development", 
-                            "title": "Android Developer", 
-                            "negative": "Absolutely not", 
-                            "affirmative": "Sure", 
-                            "href": "https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801", 
+                            "backlink": "I think I made a mistake",
+                            "subtitle": "Head towards Android Mastery learning tools, principles and patterns underlying Android Development",
+                            "title": "Android Developer",
+                            "negative": "Absolutely not",
+                            "affirmative": "Sure",
+                            "href": "https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801",
                             "id": "android-developer"
                         }
-                    ], 
-                    "segue1": "Excellent", 
-                    "segue2": "Where do you want to begin?", 
-                    "affirmative": "Tell me more", 
+                    ],
+                    "segue1": "Excellent",
+                    "segue2": "Where do you want to begin?",
+                    "affirmative": "Tell me more",
                     "id": "android"
-                }, 
+                },
                 {
-                    "backlink": "Get me outta here!", 
-                    "subtitle": "Make apps for iPad and iPhone", 
-                    "title": "iOS", 
-                    "negative": "Nope", 
+                    "backlink": "Get me outta here!",
+                    "subtitle": "Make apps for iPad and iPhone",
+                    "title": "iOS",
+                    "negative": "Nope",
                     "children": [
                         {
-                            "backlink": "I was wrong, take me back", 
-                            "subtitle": "Develop core skills to start developing apps for iPad and iPhone", 
-                            "title": "iOS Basics", 
-                            "negative": "Not on your life", 
-                            "affirmative": "Yes", 
-                            "href": "https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006", 
+                            "backlink": "I was wrong, take me back",
+                            "subtitle": "Develop core skills to start developing apps for iPad and iPhone",
+                            "title": "iOS Basics",
+                            "negative": "Not on your life",
+                            "affirmative": "Yes",
+                            "href": "https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006",
                             "id": "ios-basics"
-                        }, 
+                        },
                         {
-                            "backlink": "Get me outta here!", 
-                            "subtitle": "Master Swift and become an expert iOS Developer", 
-                            "title": "iOS Developer", 
-                            "negative": "Absolutely not", 
-                            "affirmative": "That's me!", 
-                            "href": "https://www.udacity.com/course/ios-developer-nanodegree--nd003", 
+                            "backlink": "Get me outta here!",
+                            "subtitle": "Master Swift and become an expert iOS Developer",
+                            "title": "iOS Developer",
+                            "negative": "Absolutely not",
+                            "affirmative": "That's me!",
+                            "href": "https://www.udacity.com/course/ios-developer-nanodegree--nd003",
                             "id": "ios-developer"
                         }
-                    ], 
-                    "segue1": "Excellent", 
-                    "Segue2": "Where do you want to begin?", 
-                    "affirmative": "Sure", 
+                    ],
+                    "segue1": "Excellent",
+                    "Segue2": "Where do you want to begin?",
+                    "affirmative": "Sure",
                     "id": "ios"
                 }
-            ], 
-            "segue1": "Want to make cool apps that run on mobile phones?", 
-            "segue2": "Which platform do you prefer?", 
-            "affirmative": "Tell me more", 
+            ],
+            "segue1": "Want to make cool apps that run on mobile phones?",
+            "segue2": "Which platform do you prefer?",
+            "affirmative": "Tell me more",
             "id": "mobile"
-        }, 
+        },
         {
-            "backlink": "I think I made a mistake", 
-            "subtitle": "Learn the basics of how to code", 
-            "title": "Basic Programming", 
-            "negative": "Not on your life", 
+            "backlink": "I think I made a mistake",
+            "subtitle": "Learn the basics of how to code",
+            "title": "Basic Programming",
+            "negative": "Not on your life",
             "children": [
                 {
-                    "backlink": "Get me outta here!", 
-                    "subtitle": "Learn object oriented programming in Python", 
-                    "title": "Python", 
-                    "negative": "Nope, nope, nope", 
-                    "affirmative": "That's me!", 
-                    "href": "https://www.udacity.com/course/programming-foundations-with-python--ud036", 
+                    "backlink": "Get me outta here!",
+                    "subtitle": "Learn object oriented programming in Python",
+                    "title": "Python",
+                    "negative": "Nope, nope, nope",
+                    "affirmative": "That's me!",
+                    "href": "https://www.udacity.com/course/programming-foundations-with-python--ud036",
                     "id": "python"
-                }, 
+                },
                 {
-                    "backlink": "Get me outta here!", 
-                    "subtitle": "Learn how to program in Java with classes and objects", 
-                    "title": "Java", 
-                    "negative": "Not on your life", 
-                    "affirmative": "Yes", 
-                    "href": "https://www.udacity.com/course/intro-to-java-programming--cs046", 
+                    "backlink": "Get me outta here!",
+                    "subtitle": "Learn how to program in Java with classes and objects",
+                    "title": "Java",
+                    "negative": "Not on your life",
+                    "affirmative": "Yes",
+                    "href": "https://www.udacity.com/course/intro-to-java-programming--cs046",
                     "id": "java"
-                }, 
+                },
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Learn the language that power the web", 
-                    "title": "JavaScript", 
-                    "negative": "Doesn't sound like me", 
-                    "affirmative": "Yes", 
-                    "href": "https://www.udacity.com/course/javascript-basics--ud804", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Learn the language that power the web",
+                    "title": "JavaScript",
+                    "negative": "Doesn't sound like me",
+                    "affirmative": "Yes",
+                    "href": "https://www.udacity.com/course/javascript-basics--ud804",
                     "id": "javascript"
-                }, 
+                },
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Learn how to build your first iPhone app", 
-                    "title": "Swift", 
-                    "negative": "Nope", 
-                    "affirmative": "Yes", 
-                    "href": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Learn how to build your first iPhone app",
+                    "title": "Swift",
+                    "negative": "Nope",
+                    "affirmative": "Yes",
+                    "href": "https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585",
                     "id": "swift"
                 }
-            ], 
-            "segue1": "What is the most popular language in programming ??", 
-            "segue2": "Profanity", 
-            "affirmative": "Sure", 
+            ],
+            "segue1": "What is the most popular language in programming ??",
+            "segue2": "Profanity",
+            "affirmative": "Sure",
             "id": "basic-programming"
-        }, 
+        },
         {
-            "backlink": "I think I made a mistake", 
-            "subtitle": "Learn how to make interesting predictions from data", 
-            "title": "Artificial Intelligence", 
-            "negative": "Doesn't sound like me", 
+            "backlink": "I think I made a mistake",
+            "subtitle": "Learn how to make interesting predictions from data",
+            "title": "Artificial Intelligence",
+            "negative": "Doesn't sound like me",
             "children": [
                 {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics", 
-                    "title": "Machine Learning", 
-                    "negative": "Doesn't sound like me", 
-                    "affirmative": "Totally", 
-                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
+                    "backlink": "I was wrong, take me back",
+                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics",
+                    "title": "Machine Learning",
+                    "negative": "Doesn't sound like me",
+                    "affirmative": "Totally",
+                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009",
                     "id": "machine-learning"
-                }, 
+                },
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Build the future, today", 
-                    "title": "Self Driving Car", 
-                    "negative": "No, thanks", 
-                    "affirmative": "Totally", 
-                    "href": "https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Build the future, today",
+                    "title": "Self Driving Car",
+                    "negative": "No, thanks",
+                    "affirmative": "Totally",
+                    "href": "https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013",
                     "id": "self-driving-car"
                 }
-            ], 
-            "segue1": "Are you prepared when machines rage war against humanity?", 
-            "segue2": "Backspace on semi-colon FTW!", 
-            "affirmative": "That's me!", 
+            ],
+            "segue1": "Are you prepared when machines rage war against humanity?",
+            "segue2": "Backspace on semi-colon FTW!",
+            "affirmative": "That's me!",
             "id": "artificial-intelligence"
-        }, 
+        },
         {
-            "backlink": "I was wrong, take me back", 
-            "subtitle": "Learn how to make apps that run on the internet", 
-            "title": "Web", 
-            "negative": "Nope", 
+            "backlink": "I was wrong, take me back",
+            "subtitle": "Learn how to make apps that run on the internet",
+            "title": "Web",
+            "negative": "Nope",
             "children": [
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Design stunning User Experiences", 
-                    "title": "Front End Development", 
-                    "negative": "No, thanks", 
-                    "affirmative": "Yes", 
-                    "href": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Design stunning User Experiences",
+                    "title": "Front End Development",
+                    "negative": "No, thanks",
+                    "affirmative": "Yes",
+                    "href": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
                     "id": "front-end-development"
-                }, 
+                },
                 {
-                    "backlink": "I was wrong, take me back", 
-                    "subtitle": "Master tools, techiniques and frameworks to build complex web apps", 
-                    "title": "Senior Web Developer", 
-                    "negative": "Not on your life", 
-                    "affirmative": "Totally", 
-                    "href": "https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802", 
+                    "backlink": "I was wrong, take me back",
+                    "subtitle": "Master tools, techiniques and frameworks to build complex web apps",
+                    "title": "Senior Web Developer",
+                    "negative": "Not on your life",
+                    "affirmative": "Totally",
+                    "href": "https://www.udacity.com/course/senior-web-developer-nanodegree-by-google--nd802",
                     "id": "senior-web-developer"
-                }, 
+                },
                 {
-                    "backlink": "Get me outta here!", 
-                    "subtitle": "Learn how to make server side, data driven applications that run on the web", 
-                    "title": "Full Stack Developer", 
-                    "negative": "No", 
-                    "affirmative": "Yes", 
-                    "href": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004", 
+                    "backlink": "Get me outta here!",
+                    "subtitle": "Learn how to make server side, data driven applications that run on the web",
+                    "title": "Full Stack Developer",
+                    "negative": "No",
+                    "affirmative": "Yes",
+                    "href": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004",
                     "id": "full-stack-developer"
                 }
-            ], 
-            "segue1": "Is it too late to say I'm sorry?", 
-            "segue2": "Cause I'm missing more than just your &ltbody&gt", 
-            "affirmative": "Sure", 
+            ],
+            "segue1": "Is it too late to say I'm sorry?",
+            "segue2": "Cause I'm missing more than just your &ltbody&gt",
+            "affirmative": "Sure",
             "id": "web"
-        }, 
+        },
         {
-            "backlink": "I was wrong, take me back", 
-            "subtitle": "Find interesting patterns in data", 
-            "title": "Data", 
-            "negative": "Absolutely not", 
+            "backlink": "I was wrong, take me back",
+            "subtitle": "Find interesting patterns in data",
+            "title": "Data",
+            "negative": "Absolutely not",
             "children": [
                 {
-                    "backlink": "I think I made a mistake", 
-                    "subtitle": "Learn how to clean data, dervice patterns and insights, make predications and present your findings", 
-                    "title": "Data Analyst", 
-                    "negative": "Absolutely not", 
-                    "affirmative": "Totally", 
-                    "href": "https://www.udacity.com/course/data-analyst-nanodegree--nd002", 
+                    "backlink": "I think I made a mistake",
+                    "subtitle": "Learn how to clean data, dervice patterns and insights, make predications and present your findings",
+                    "title": "Data Analyst",
+                    "negative": "Absolutely not",
+                    "affirmative": "Totally",
+                    "href": "https://www.udacity.com/course/data-analyst-nanodegree--nd002",
                     "id": "data-analyst"
-                }, 
+                },
                 {
-                    "backlink": "Get me outta here!", 
-                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics", 
-                    "title": "Machine Learning", 
-                    "negative": "Not on your life", 
-                    "affirmative": "That's me!", 
-                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009", 
+                    "backlink": "Get me outta here!",
+                    "subtitle": "Make predictive models for massive data sets in education, finance, healthcare or robotics",
+                    "title": "Machine Learning",
+                    "negative": "Not on your life",
+                    "affirmative": "That's me!",
+                    "href": "https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009",
                     "id": "machine-learningb"
                 }
-            ], 
-            "segue1": "Torture the data...", 
-            "segue2": "it will confess to anything !", 
-            "affirmative": "That's me!", 
+            ],
+            "segue1": "Torture the data...",
+            "segue2": "it will confess to anything !",
+            "affirmative": "That's me!",
             "id": "data"
         }
-    ], 
-    "negative": "Absolutely not", 
-    "affirmative": "That's me!", 
-    "segue1": "Want to learn from Udacity?", 
-    "segue2": "What's your area of interest?", 
+    ],
+    "negative": "Absolutely not",
+    "affirmative": "That's me!",
+    "segue1": "Want to learn from Udacity?",
+    "segue2": "What's your area of interest?",
     "id": "foo"
 };
     </script>
@@ -305,27 +305,6 @@
 
         <div class="cover-container">
 
-          <div id='js-warning'>
-            <div class=" panel panel-warning">
-              <div class="panel-heading clearfix">
-                <span class="pull-left"> This page requires JavaScript </span>
-              </div>
-              <div class="panel-body">
-                <p class="lead">This page only works with JavaScript enabled.</p>
-                <p>If you have JavaScript disabled with a plugin like NoScript, please
-                disable that plugin and reload the page.  If you trust us, you
-                might find it convenient to enable JavaScript just
-                for this domain.</p>
-                <p>If you are opposed to JavaScript in principle, you're not left out!
-                You can read the page source to get at all the data.</p>
-              </div>
-            </div>
-          </div>
-
-          
-
-          
-
             <div id="mobile" class="cover hidden">
 
               <p class="segue1">Want to learn from Udacity?</p>
@@ -351,7 +330,7 @@
                 </p>
             </div>
 
-                
+
 
             <div id="android" class="cover hidden">
 
@@ -381,7 +360,7 @@
               </p>
             </div>
 
-                
+
 
             <div id="android-basics" class="cover hidden">
 
@@ -410,8 +389,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="android-developer" class="cover hidden">
 
@@ -440,10 +419,10 @@
             </div>
 
 
-          
 
-          
-                
+
+
+
 
             <div id="ios" class="cover hidden">
 
@@ -473,7 +452,7 @@
               </p>
             </div>
 
-                
+
 
             <div id="ios-basics" class="cover hidden">
 
@@ -501,8 +480,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="ios-developer" class="cover hidden">
 
@@ -530,12 +509,12 @@
             </div>
 
 
-          
 
-          
 
-          
-          
+
+
+
+
 
             <div id="basic-programming" class="cover hidden">
 
@@ -562,7 +541,7 @@
                 </p>
             </div>
 
-                
+
 
             <div id="python" class="cover hidden">
 
@@ -591,8 +570,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="java" class="cover hidden">
 
@@ -621,8 +600,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="javascript" class="cover hidden">
 
@@ -651,8 +630,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="swift" class="cover hidden">
 
@@ -681,10 +660,10 @@
             </div>
 
 
-          
 
-          
-          
+
+
+
 
             <div id="artificial-intelligence" class="cover hidden">
 
@@ -711,7 +690,7 @@
                 </p>
             </div>
 
-                
+
 
             <div id="machine-learning" class="cover hidden">
 
@@ -740,8 +719,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="self-driving-car" class="cover hidden">
 
@@ -770,10 +749,10 @@
             </div>
 
 
-          
 
-          
-          
+
+
+
 
             <div id="web" class="cover hidden">
 
@@ -800,7 +779,7 @@
                 </p>
             </div>
 
-                
+
 
             <div id="front-end-development" class="cover hidden">
 
@@ -829,8 +808,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="senior-web-developer" class="cover hidden">
 
@@ -859,8 +838,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="full-stack-developer" class="cover hidden">
 
@@ -889,10 +868,10 @@
             </div>
 
 
-          
 
-          
-          
+
+
+
 
             <div id="data" class="cover hidden">
 
@@ -919,7 +898,7 @@
                 </p>
             </div>
 
-                
+
 
             <div id="data-analyst" class="cover hidden">
 
@@ -948,8 +927,8 @@
             </div>
 
 
-          
-                
+
+
 
             <div id="machine-learningb" class="cover hidden">
 
@@ -978,9 +957,9 @@
             </div>
 
 
-          
 
-          
+
+
 
         </div>
 
