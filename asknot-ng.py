@@ -55,7 +55,7 @@ def work(question_filename, template, lang, languages,
     kwargs['languages'] = languages
 
     if graph:
-        dot = produce_graph(kwargs['tree'])
+        (nx, dot) = produce_graph(kwargs['tree'])
         dot.layout()#prog='dot')
         filename = '%s.svg' % kwargs.get('theme', 'asknot')
         dot.draw(filename)

@@ -161,17 +161,28 @@ def produce_graph(tree, dot=None):
     """ Given a question tree, returns a pygraphviz object
     for later rendering.
     """
-    import pygraphviz
-    dot = dot or pygraphviz.AGraph(directed=True)
+    # import pygraphviz
+    # dot = dot or pygraphviz.AGraph(directed=True)
+
+    # idx = tree.get('id', 'root')
+    # dot.add_node(idx, label=tree.get('title', 'Root'))
+
+    # for child in tree.get('children', []):
+    #     dot = produce_graph(child, dot)
+    #     dot.add_edge(idx, child['id'])
+
+    # return dot
+    import networkx as nx
+    G = nx.DiGraph()
 
     idx = tree.get('id', 'root')
-    dot.add_node(idx, label=tree.get('title', 'Root'))
+    G.add_node(idx, label=tree.get('title', 'WhatcanIlearnfromUdacity'))
 
     for child in tree.get('children', []):
-        dot = produce_graph(child, dot)
-        dot.add_edge(idx, child['id'])
+        G = produce_graph(child, dot)
+        G.add_edge(idx, child['id'])
+    return G
 
-    return dot
 
 
 def load_template(filename):

@@ -27,6 +27,8 @@ navlinks:
       link: "javascript:reloadHome();"
     - name: Nanodegrees
       link: https://www.udacity.com/nanodegree
+    - name: Visualisation
+      link: /vis
 
 tree:
   segue1: Want to learn from Udacity?
