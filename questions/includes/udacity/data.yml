@@ -1,8 +1,8 @@
 tree:
   children:
     - title: Data Analyst
-      subtitle: Discover Insights from Data
+      subtitle: Learn how to clean data, dervice patterns and insights, make predications and present your findings
       href: https://www.udacity.com/course/data-analyst-nanodegree--nd002
     - title: Machine Learning
-      subtitle: Make predictive models from data
+      subtitle: Make predictive models for massive data sets in education, finance, healthcare or robotics
       href: https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009

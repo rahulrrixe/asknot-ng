@@ -1,7 +1,7 @@
 tree:
   children:
     - title: Machine Learning
-      subtitle: Do you think the internet is plotting to kill you?
+      subtitle: Make predictive models for massive data sets in education, finance, healthcare or robotics
       href: https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009
     - title: Self Driving Car
       subtitle: Build the future, today

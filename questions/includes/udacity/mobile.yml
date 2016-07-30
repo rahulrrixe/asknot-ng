@@ -1,37 +1,30 @@
 tree:
     children:
       - title: Android
-        subtitle: Kitkats, Lollipops, Marshmallows anyone? 
+        subtitle: Make apps for Android Phones
         segue1: Excellent
         segue2: Where do you want to begin?
 
         children:
         - title: Android Basics 
-          subtitle: Does Java sound like an island or like coffee? 
+          subtitle: Learn Java and start building apps for Android
           href: https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803
-          segue1: Lets Start!
-          segue2: Want to make your first Android app?
 
         - title: Android Developer
-          subtitle: Tap on Settings 7 times and behold, you are a developer
+          subtitle: Head towards Android Mastery learning tools, principles and patterns underlying Android Development
           href: https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801
-          segue1: Yo I can hack java let's do Android!
-          segue2: How does this sound?
 
       - title: iOS
-        subtitle: Siri, what is 0 / 0 ?
+        subtitle: Make apps for iPad and iPhone
         segue1: Excellent
         Segue2: Where do you want to begin?
 
         children:
         - title: iOS Basics 
-          subtitle: Did you think Swift was optional ? or !
+          subtitle: Develop core skills to start developing apps for iPad and iPhone
           href: https://www.udacity.com/course/beginning-ios-app-development-nanodegree--nd006
-          segue1: Yes's start!
-          segue2: Understand the objective of Swift!? 
 
         - title: iOS Developer
-          subtitle: If I had a dollar for every time someone said I have an app idea !
+          subtitle: Master Swift and become an expert iOS Developer
           href: https://www.udacity.com/course/ios-developer-nanodegree--nd003
-          segue1: Excellent!
-          segue2: How does this sound?
+
